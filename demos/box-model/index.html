@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <style>
+        
+        p {
+            border: 3px solid red;
+            width: 300px;
+            height: 100px;
+            padding: 20px;
+            margin: 20px;
+            box-sizing: border-box
+        }
+        /*
+            *=box sizing cohmpute
+            54px (Height) / 2 = 27px;
+            20px (Padding) + 27px  = 47px - box will remain unchange euntil padding exceed 47px
+        
+            47px * 2 = 94px (Height without border)
+            
+            94 + 3px (Top Border) + 3px (Bottom Border) 
+            = 100px (Total Height)
+        */
+    </style>
+    <body>
+          <p>
+            The box model
+          </p>
+        <div>
+        The Model
+        </div>
+    </body>
+</html>
