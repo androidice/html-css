@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <style> 
+        a:link {
+            color: grey; /**does not style the link already visited*/
+        }
+        a:visited {
+            color: green;
+        }
+        a:hover {
+            color: orange;
+        }
+        a:active {
+            color: red;
+        }
+        
+        /**
+        Note: all pseudo classes above are only used for links
+        except for hover
+        */
+        .dropdown-conntent a {
+            display: none
+        }
+        
+        .dropdown a{
+            color:blue;
+        }
+        
+        div.dropdown:hover div.dropdown-conntent a{
+            display: block;
+        }
+        
+        div p:first-child {
+            background: green
+        }
+        
+        div p:last-child {
+            background: red
+        }
+        
+        div p:nth-child(2) {
+            background: yellow;
+        }
+    </style>
+    <body>
+        <a href="http://google.com" target="_blank">google</a>
+        
+        <div class="dropdown">
+            <a href="javascript:void(0);">Products</a>
+            <div class="dropdown-conntent">
+                <a href="javascript:void(0);">Product 1</a>
+                <a href="javascript:void(0);">Product 2</a>
+                <a href="javascript:void(0);">Product 3s</a>
+            </div>
+        </div>
+        
+        <div>
+            <p>Paragraph 1</p>
+            <p>Paragraph 2</p>
+            <p>Paragraph 2</p>
+        </div>
+    </body>
+</html>
