@@ -29,12 +29,17 @@
             background: green;
             float: right;
         }
-        .clear{
-            clear:both;
+        
+        .clearfix:after {
+            content: " ";
+            display:block;
+            clear:both
         }
+
+        
     </style>
     <body>
-          <div id="parent">
+          <div id="parent" class="clearfix">
              <div class="left"></div>
              <div class="right"></div>
              <div class="clear"></div>
