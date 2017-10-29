@@ -6,21 +6,34 @@
     <style>
 
         /*
-          CSS Pkosition:
-            Static  
-            Relative
-            Absolute
-            Fixed
+          CSS Floats
+         
         */
-            div {
-               
-            }
+        #parent {
+            background-color: grey;
+            border-top: 10px solid blue;
+            border-bottom: 10px solid purple;
+            overflow: auto;
+        }
+        
+        .left {
+            width: 100px;
+            height: 100px;
+            background: red;
+            float:left;
+        }
+        
+        .right {
+            width: 100px;
+            height: 100px;
+            background: green;
+            float: right;
+        }
     </style>
     <body>
           <div id="parent">
-             <div id="first" class="box">First</div>
-             <div id="second" class="box">Second</div>
-             <div id="third" class="box">Third</div>
+             <div class="left"></div>
+             <div class="right"></div>
           </div>
     </body>
 </html>
