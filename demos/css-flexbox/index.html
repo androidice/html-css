@@ -17,25 +17,33 @@
                 
         */
         #flexbox {
+            width: 800px;
+            height: 800px;
             background: grey;
             display: flex; /*initiate flex */
-            justify-content: space-around;
+            margin: auto;
+            justify-content: center
         }
         #flex1 {
             width: 200px;
             height: 200px;
             background: red;
+            
         }
         #flex2 {
             width: 200px;
             height: 200px;
             background: green;
-            flex: 2;
+           
         }
         #flex3 {
             width: 200px;
             height: 200px;
             background: blue;
+        }
+        
+        .box{
+            margin: 10px;
         }
         h2 {
             margin:0;
@@ -46,15 +54,15 @@
     </style>
     <body>
           <div id="flexbox">
-            <div id="flex1">
+            <div id="flex1" class="box">
                 <h2>Item 1</h2>  
             </div>
               
-            <div id="flex2">
+            <div id="flex2" class="box">
                 <h2>Item 2</h2>  
             </div>
               
-            <div id="flex3">
+            <div id="flex3" class="box">
                 <h2>Item 3</h2>  
             </div>
           </div>
