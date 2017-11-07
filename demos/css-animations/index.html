@@ -34,9 +34,46 @@
             100% { BACKGROUND: RED; }
         }
         */
-           
+        
+        
+        div {
+            background: red;
+            width: 200px;
+            height: 200px;
+            position: relative;
+            animation-name: sample;
+            animation-duration: 4s;
+        }
+        
+        @keyframes sample {
+            0% { /**Neutral values*/
+                left: 0;
+                top: 0;
+                transform: rotateZ(0deg);
+            }
+            25% {
+                left: 400px;
+                top: 0;
+                transform: rotateZ(90deg);
+            }
+            50% {
+                left: 400px;
+                top: 400px;
+                transform: rotateZ(180deg);
+            }
+            75% {
+                left: 0;
+                top: 400px;
+                transform: rotateZ(270deg);
+            }
+            100% {
+                left: 0;
+                top: 0;
+                transform: rotateZ(360deg);
+            }
+        }
     </style>
     <body>
-        
+        <div></div>
     </body>
 </html>
